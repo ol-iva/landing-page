@@ -112,6 +112,7 @@ li.active > a {
     color: var(--content-font-color);
     padding: 8px 12px;
     border-radius: var(--block-border-radius);
+    font-size: 1.2rem;
 }
 .get-in-touch, .about-me {
     text-align: center;
@@ -224,7 +225,7 @@ a.text-muted {
 .why-need {
     display: grid;
     grid-template-columns: 40px 1fr 40px 40px 1fr 40px 40px;
-    grid-template-rows: 40px 1fr 40px 40px 400px 40px;
+    grid-template-rows: 40px 1fr 40px 40px 1fr 40px;
     margin-bottom: 80px;
 }
 .reasons {
@@ -291,16 +292,61 @@ a.text-muted {
     color: var(--bg-color);
     border-bottom: 4px solid var(--bg-color);
 }
+.project {
+    margin: 40px;
+}
+.link-1 {
+    background: url(../images/project_1.png) no-repeat 50% center;
+}
+.link-2 {
+    background: url(../images/project_2.png) no-repeat 50% center;
+}
+.project-2, .project-1 {
+    height: 380px;
+    background-size: contain;
+}
+.project-background a{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-size: contain;
+    border-radius: var(--block-border-radius);
+    text-decoration: none;
+}
+.project-background h2{
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    background: var(--bg-color-transparent);
+    margin: 0;
+    height: 100%;
+    padding-top: 25%;
+    transition: var(--transition-config);
+    border-radius: 2px;
+}
+.project-background h2:hover {
+    opacity: 0;
+}
 
-@media (max-width: 600px) {
-    .hero {
-        padding: 0 20px 20px;
+@media (max-width: 900px) {
+    .services {
+        margin: 0 auto;
     }
-    input[type=search] {
-        width: 60%;
+    .about-container {
+        grid-template-columns: 40px 1fr 40px 40px;
+        grid-template-rows: 40px 1fr 40px 1fr;
     }
-    .form-search {
-        margin-top: 20px;
+    .bg-portrait {
+        grid-column: 1 / 3;
+        grid-row: 1 / 5;
+    }
+    .portrait {
+        grid-column: 2 / 4;
+        grid-row: 2 / 2;
+    }
+    .description {
+        grid-column: 2 / 5;
+        grid-row: 3 / 5;
     }
     .why-need {
         grid-template-columns: 20px 1fr 20px;
@@ -310,12 +356,28 @@ a.text-muted {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
-   .why-need .bg-portrait {
+    .why-need .bg-portrait {
         grid-column: 1 /4;
         grid-row: 2 / 3;
     }
-   .why-need .portrait {
-       grid-column: 2 / 3;
-       grid-row: 2 / 3;
-   }
+    .why-need .portrait {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 0 20px 20px;
+    }
+    .services {
+        margin: 0;
+    }
+    input[type=search] {
+        width: 60%;
+    }
+    .form-search {
+        margin-top: 20px;
+    }
+
 }
