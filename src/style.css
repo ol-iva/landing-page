@@ -53,8 +53,16 @@ video {
 .hero, nav, input[type=search] {
     background-color: rgba(255,255,255,0.5)!important;
 }
+.logo-img {
+    max-width: 50px;
+}
 .bg-light {
     background-color: rgba(255,255,255,0)!important;
+}
+.bg-road-img {
+    width: 100%;
+    min-height: 100%;
+    background: url(../images/road_mountains.jpg) no-repeat 50% center;
 }
 .btn-search {
     border: 1px solid  var(--content-font-color);
@@ -102,30 +110,19 @@ li.active > a {
 .btn-contact a{
     text-decoration: none;
     color: var(--content-font-color);
-    border: 1px solid var(--bg-color-transparent);
     padding: 8px 12px;
     border-radius: var(--block-border-radius);
 }
-.get-in-touch a{
-    background-color: var(--bg-color-transparent);
-    color: #ffffff;
+.get-in-touch, .about-me {
+    text-align: center;
+}
+.about-me a, .my-projects a, .get-in-touch a {
     transition: var(--transition-config);
-    width: 132px;
     text-align: center;
     display: inline-block;
 }
+.about-me a:hover, .my-projects a:hover,
 .get-in-touch a:hover {
-    background-color: #ffffff;
-    color: var(--content-font-color);
-
-}
-.about-me a, .my-projects a {
-    transition: var(--transition-config);
-    width: 132px;
-    text-align: center;
-    display: inline-block;
-}
-.about-me a:hover, .my-projects a:hover {
     background-color: var(--bg-color-transparent);
     color: #ffffff;
 }
