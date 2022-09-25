@@ -369,6 +369,7 @@ a.text-muted {
 @media (max-width: 600px) {
     .hero {
         padding: 0 20px 20px;
+        max-height: 400px;
     }
     .services {
         margin: 0;
@@ -379,5 +380,4 @@ a.text-muted {
     .form-search {
         margin-top: 20px;
     }
-
 }
